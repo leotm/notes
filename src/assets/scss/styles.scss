@@ -1,0 +1,68 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "custom";
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/print";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+// @import "~bootstrap/scss/nav";
+// @import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+// @import "~bootstrap/scss/breadcrumb";
+// @import "~bootstrap/scss/pagination";
+// @import "~bootstrap/scss/badge";
+// @import "~bootstrap/scss/jumbotron";
+// @import "~bootstrap/scss/alert";
+// @import "~bootstrap/scss/progress";
+// @import "~bootstrap/scss/media";
+// @import "~bootstrap/scss/list-group";
+// @import "~bootstrap/scss/close";
+// @import "~bootstrap/scss/modal";
+// @import "~bootstrap/scss/tooltip";
+// @import "~bootstrap/scss/popover";
+// @import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+
+body {
+  background: $cloudy;
+  color: $dark-blue;
+}
+
+span {
+  color: $red;
+}
+
+button.btn {
+  border-radius: 0px !important;
+  font-weight: bold !important;
+}
+
+button.btn.main {
+  text-transform: uppercase;
+  color: white;
+  background: $teal !important;
+  border: 1px solid $teal !important;
+  border-bottom: 2px solid $dark-green !important;
+}
+
+label {
+  font-weight: bold;
+}
+
+button.btn.other {
+  border: 2px solid $dark-blue;
+}

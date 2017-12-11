@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-12 col-sm-8">
+
+    <h5 class="mb-3">{{heading}}</h5>
+
+    <form (submit)="addNote()">
+
+      <div class="form-group mb-0">
+        <textarea id="note" class="mb-2 p-2 w-100" [(ngModel)]="note" name="note"></textarea>
+      </div>
+
+      <button class="btn other float-left" routerLink="/read" routerLinkActive="active">Cancel</button>
+      <button type="submit" class="btn main float-right">Add note ></button>
+
+    </form>
+
+    <div class="clearfix"></div>
+
+    <hr>
+
+    <div class="row py-3" *ngFor="let note of notes">
+      <div class="col-2">
+        <img src="{{note[6]}}" alt="Avatar">
+      </div>
+      <div class="col-10">
+        <div class="card p-3">
+          <div class="card-block">
+            <h6 class="float-left">{{note[1]}}</h6>
+            <h6 class="float-right">{{note[5] | date: 'dd/MM/yy @ HH:mm'}}</h6>
+            <div class="clearfix"></div>
+            <p>{{note[4]}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+  </div>
+</div>
